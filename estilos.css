@@ -2,7 +2,7 @@
   --color1: rgb(255, 92, 88,.5);
   --color2: rgba(255, 92, 88, 0.877);
   --fondo: #FCD2D1;
-  --titulos: 33px;
+  --titulos: 40px;
   --margenes: 60px;
   --espacios: 10px;
   --espacios-contenido:45px;
@@ -143,12 +143,16 @@ nav .enlaces a:hover{
   transition: 0.6s;
 }
 
-.logo, .logo img{ height:80px;}
+.logo, .logo img{ height:50px;}
 
 .icono{
   display:none;
   font-size: 24px;
   padding: 23.5px 20px;
+}
+
+#menu {
+  color: #FCD2D1;
 }
 
 .textos{
@@ -171,7 +175,7 @@ nav .enlaces a:hover{
 
 .contenedor{
   margin:auto;
-  padding: var(--margenes) 0;
+  padding: var(--margenes) 0 20px 0;
   width: 90%;
   max-width: 1000px;
   text-align: center;
@@ -271,29 +275,45 @@ footer{
   background-size: cover;
 }
 
+.footer {
+  margin: auto;
+  padding: 20px 0;
+  width: 90%;
+  max-width: 1000px;
+  overflow: hidden;
+  color: #FFEDD3;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .marca-logo{
   width: 40%;
-  margin: auto;
-  margin-bottom: var(--espacios);
+  display: flex;
+  justify-content: center;
 }
 .marca-logo img{
-  width: 100%;
+  width: 50%;
 }
 .iconos{
   display: flex;
+  flex-direction: column;
   margin: auto;
-  justify-content: space-around;
   width: 100%;
 }
-.fab{
-  font-size:60px;
-  color: #FFEDD3;
-  margin-bottom: var(--espacios);
-  display: inline-block;
+
+.iconos span {
+  display: flex;
+  align-items: center;
 }
 
-footer p{
-  margin-top:var(--espacios);
+.fab{
+  font-size:50px;
+  margin-bottom: var(--espacios);
+  margin-right: 5px;
+  display: inline-block;
 }
 
 @media screen and (max-width: 700px){

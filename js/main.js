@@ -2,7 +2,7 @@
 
 let nav = document.getElementById('nav');
 let menu = document.getElementById('enlaces');
-let abrir = document.getElementById('open');
+let abrir = document.getElementById('menu');
 let botones = document.getElementsByClassName('btn-header');
 let cerrado = true;
 
@@ -14,13 +14,13 @@ function menus(){
         nav.className = ('nav1');
         nav.style.transition = '1s';
         menu.style.top = '80px';
-        abrir.style.color = '#fff';
+        abrir.style.color = '#FCD2D1';
     }else{
         nav.classList.remove('nav1');
         nav.className = ('nav2');
         nav.style.transition = '1s';
         menu.style.top = '100px';
-        abrir.style.color = '#000';
+        abrir.style.color = '#FF5C58';
     }
 }
 
@@ -43,7 +43,7 @@ window.addEventListener('load', function(){
 window.addEventListener('click',function(e){
     console.log(e.target);
     if(cerrado==false){
-        let span = document.querySelector('span');
+        let span = document.getElementById("menu");
         if(e.target !== span && e.target !== abrir){
             menu.style.width = '0%';
             menu.style.overflow = 'hidden';
