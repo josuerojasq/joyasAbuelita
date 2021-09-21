@@ -293,13 +293,14 @@ footer{
   width: 40%;
   display: flex;
   justify-content: center;
+  margin-top: 30px;
 }
 .marca-logo img{
   width: 50%;
 }
 .iconos{
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   margin: auto;
   width: 100%;
 }
@@ -307,6 +308,17 @@ footer{
 .iconos span {
   display: flex;
   align-items: center;
+}
+
+.iconos a {
+  padding: 5px 0;
+  text-decoration: none;
+  color: #FCD2D1;
+}
+
+.iconos a:hover {
+  border-bottom: 3px solid #FCD2D1;
+  transition: 0.5s;
 }
 
 .fab{
@@ -369,6 +381,7 @@ footer{
   }
 
   .iconos{
-    margin: auto;
+    flex-direction: column;
+    align-items: center;
   }
 }
