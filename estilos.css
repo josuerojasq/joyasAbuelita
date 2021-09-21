@@ -20,7 +20,7 @@ body {
 }
 
 img{
-  vertical-align: top;
+  vertical-align: middle;
 }
 
 
@@ -239,6 +239,8 @@ nav .enlaces a:hover{
   height:300px;
   overflow: hidden;
   margin-bottom: var(--espacios-contenido);
+  display: flex;
+  align-items: center;
 }
 
 .img-work{
