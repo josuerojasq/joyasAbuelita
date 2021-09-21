@@ -1,7 +1,6 @@
 :root{
   --color1: rgb(255, 92, 88,.5);
   --color2: rgba(255, 92, 88, 0.877);
-  --color3: rgba(11,194,211, 0.623);
   --fondo: #FCD2D1;
   --titulos: 33px;
   --margenes: 60px;
@@ -260,6 +259,7 @@ nav .enlaces a:hover{
 .textos-work h4{
   line-height: 30px;
   font-weight: 300;
+  color: #FF5C58;
 }
 
 /* Footer */
